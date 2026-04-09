@@ -4,11 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beam – Admin Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    a { text-decoration: none; }
+
+    .outer-td { padding: 40px 16px; }
+    .header-td { padding: 24px 32px 20px; }
+    .card-td { padding: 36px 36px 32px; }
+    .footer-td { padding: 20px 32px; }
+    .email-container { width: 600px; }
+    .banner-img { width: 600px; max-width: 100%; }
+
+    @media (max-width: 620px) {
+      .outer-td { padding: 20px 10px; }
+      .email-container { width: 100%; }
+      .header-td { padding: 20px 20px 16px; }
+      .card-td { padding: 28px 20px 24px; }
+      .footer-td { padding: 18px 20px; }
+      .banner-img { width: 100%; }
+    }
+  </style>
 </head>
-<body>
-  <table class="outer-wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<body style="font-family: 'DM Sans', Arial, sans-serif; background-color: #f0f0f0; color: #111111; margin: 0; padding: 0;">
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; background-color: #ffffff;">
     <tr>
       <td class="outer-td" align="center">
 
@@ -18,11 +36,11 @@
             <td class="header-td">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td class="logo-img-td">
-                    <img class="logo-img" src="icons/beamlogo.png" alt="Beam" width="44" height="44">
+                  <td style="padding-right: 10px; vertical-align: middle;">
+                    <img src="icons/beamlogo.png" alt="Beam" width="44" height="44" style="display: block; border-radius: 9999px; object-fit: cover;">
                   </td>
-                  <td class="logo-name-td">
-                    <span class="logo-name">Beam</span>
+                  <td style="vertical-align: middle;">
+                    <span style="font-size: 26px; font-weight: 900; font-family: Arial, Helvetica, sans-serif; color: #000000;">Beam</span>
                   </td>
                 </tr>
               </table>
@@ -30,29 +48,29 @@
           </tr>
 
           <tr>
-            <td class="card-outer-td">
-              <table class="card-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <td>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td class="card-td">
+                  <td class="card-td" style="background-color: #FAFAFA; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
 
-                    <p class="greeting">Hi {{first_name}} {{last_name}},</p>
+                    <p style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: 800; color: black; margin-bottom: 18px; margin-top: 0;">Hi {{first_name}} {{last_name}},</p>
 
-                    <p class="body-text">You have been invited to join Beam as an Admin</p>
-                    <p class="body-text">Please click the button below to set up your account and manage the platform efficiently.</p>
+                    <p style="font-size: 14px; color: #595957; line-height: 1.65; margin-bottom: 14px; margin-top: 0;">You have been invited to join Beam as an Admin</p>
+                    <p style="font-size: 14px; color: #595957; line-height: 1.65; margin-bottom: 14px; margin-top: 0;">Please click the button below to set up your account and manage the platform efficiently.</p>
 
-                    <table class="btn-table" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td class="btn-td">
-                          <a href="{{setup_url}}" class="cta-btn">Set up your account</a>
+                        <td style="padding: 0;">
+                          <a href="{{setup_url}}" style="display: inline-block; margin: 5px 0 24px; padding: 10px 16px; background-color: #111111; color: white; font-family: 'DM Sans', Arial, sans-serif; font-size: 14px; font-weight: 800; text-transform: uppercase; border-radius: 6px; text-decoration: none;">Set up your account</a>
                         </td>
                       </tr>
                     </table>
 
-                    <p class="disclaimer">If you didn't expect this invitation, please ignore this email.</p>
+                    <p style="font-size: 14px; color: #595957; line-height: 1.6; margin-bottom: 18px; margin-top: 0;">If you didn't expect this invitation, please ignore this email.</p>
 
-                    <p class="signature">
+                    <p style="font-size: 14px; line-height: 1.7; color: #595957; margin: 0;">
                       Best regards,<br>
-                      <span class="signature-name">The Beam Team</span>
+                      <span style="font-weight: 500; color: #595957;">The Beam Team</span>
                     </p>
 
                   </td>
@@ -62,37 +80,37 @@
           </tr>
 
           <tr>
-            <td class="footer-outer-td">
-              <table class="footer-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <td style="padding-bottom: 4px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td class="footer-td">
+                  <td class="footer-td" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
 
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td class="footer-question-td"" width="100%">
-                          <p class="footer-question">Got questions and concerns?</p>
+                        <td width="100%" style="vertical-align: middle;">
+                          <p style="font-size: 13px; color: #888888; margin: 0;">Got questions and concerns?</p>
                         </td>
-                        <td class="social-icons-td" align="right">
+                        <td align="right">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                             <tr>
-                              <td class="social-icon-td">
-                                <a href="mailto:support@beam.app" class="social-link">
-                                  <img src="icons/emailIcon.png" alt="Email" width="30" height="30" class="social-img">
+                              <td style="padding-left: 8px; vertical-align: middle;">
+                                <a href="mailto:support@beam.app" style="display: inline-block;">
+                                  <img src="icons/emailIcon.png" alt="Email" width="30" height="30" style="width: 30px; height: 30px; display: block; object-fit: contain;">
                                 </a>
                               </td>
-                              <td class="social-icon-td">
-                                <a href="https://instagram.com/beam" class="social-link">
-                                  <img src="icons/instagramicon.png" alt="Instagram" width="30" height="30" class="social-img">
+                              <td style="padding-left: 8px; vertical-align: middle;">
+                                <a href="https://instagram.com/beam" style="display: inline-block;">
+                                  <img src="icons/instagramicon.png" alt="Instagram" width="30" height="30" style="width: 30px; height: 30px; display: block; object-fit: contain;">
                                 </a>
                               </td>
-                              <td class="social-icon-td">
-                                <a href="https://facebook.com/beam" class="social-link">
-                                  <img src="icons/facebookicon.png" alt="Facebook" width="30" height="30" class="social-img">
+                              <td style="padding-left: 8px; vertical-align: middle;">
+                                <a href="https://facebook.com/beam" style="display: inline-block;">
+                                  <img src="icons/facebookicon.png" alt="Facebook" width="30" height="30" style="width: 30px; height: 30px; display: block; object-fit: contain;">
                                 </a>
                               </td>
-                              <td class="social-icon-td">
-                                <a href="https://x.com/beam" class="social-link">
-                                  <img src="icons/twittericon.png" alt="X" width="30" height="30" class="social-img">
+                              <td style="padding-left: 8px; vertical-align: middle;">
+                                <a href="https://x.com/beam" style="display: inline-block;">
+                                  <img src="icons/twittericon.png" alt="X" width="30" height="30" style="width: 30px; height: 30px; display: block; object-fit: contain;">
                                 </a>
                               </td>
                             </tr>
@@ -103,14 +121,15 @@
 
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td class="unsubscribe-td" align="center">
-                          <p class="unsubscribe">
+                        <td align="center" style="padding-top: 6px; padding-bottom: 2px; text-align: center;">
+                          <p style="width: 100%; text-align: center; font-size: 13px; color: #888888; padding: 6px 0 2px; margin: 0;">
                             Don't want any more emails from Beam?
-                            <a href="{{unsubscribe_url}}" class="unsubscribe-link">Unsubscribe.</a>
+                            <a href="{{unsubscribe_url}}" style="color: #111111; font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">Unsubscribe.</a>
                           </p>
                         </td>
                       </tr>
                     </table>
+
                   </td>
                 </tr>
               </table>
@@ -118,8 +137,8 @@
           </tr>
 
           <tr>
-            <td class="banner-td">
-              <img src="footer-banner.png" alt="Promo Banner" width="600" class="banner-img">
+            <td style="padding-top: 4px;">
+              <img src="footer-banner.png" alt="Promo Banner" width="600" class="banner-img" style="display: block; border-radius: 10px; margin-bottom: 32px;">
             </td>
           </tr>
 
